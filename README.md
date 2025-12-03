@@ -1,4 +1,4 @@
-# Museum Landing Page
+# THE MET
 
 A responsive landing page for a museum, created as a practice project. The page adapts to different screen sizes and follows semantic HTML and BEM methodology.
 
@@ -10,7 +10,7 @@ A responsive landing page for a museum, created as a practice project. The page 
 
 ## 🔗 Preview
 
-[Live Preview](https://yuliiakulish.github.io/layout_landing-page/)
+[Live Preview](https://yuliiakulish.github.io/TheMet/)
 
 ## 🎨 Design
 
@@ -20,11 +20,11 @@ A responsive landing page for a museum, created as a practice project. The page 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YuliiaKulish/layout_landing-page.git
+   git clone https://github.com/YuliiaKulish/TheMet.git
    ```
 2. Navigate to the project folder:
    ```bash
-   cd layout_landing-page
+   cd TheMet
    ```
 3. Install dependencies:
    ```bash

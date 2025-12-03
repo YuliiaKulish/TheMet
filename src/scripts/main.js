@@ -1,3 +1,5 @@
+'use strict';
+
 const burgerIcon = document.querySelector('.burger-icon');
 const burgerMenu = document.querySelector('.menu');
 const logo = document.querySelector('.menu__logo');
@@ -27,7 +29,7 @@ anchorLinks.forEach((link) => {
 });
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener('click', function (event) {
+  anchor.addEventListener('click', function(event) {
     event.preventDefault();
 
     const targetId = this.getAttribute('href').substring(1);
