@@ -1,9 +1,17 @@
 @use './utils/vars';
 @use './utils/reset';
 @use './utils/common';
+@use './components/section';
+@use './components/picture';
+@use './components/button';
 @use './components/header';
+@use './components/logo';
+@use './components/burger';
+@use './components/menu';
+@use './components/nav';
 @use './components/about';
 @use './components/now-on-view';
 @use './components/explore-online';
 @use './components/contacts';
+@use './components/form';
 @use './components/footer';

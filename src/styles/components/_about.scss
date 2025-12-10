@@ -5,11 +5,12 @@
   &__container {
     @include page-grid;
   }
+
   &__top {
     grid-column: 1 / -1;
 
     @media (max-width: $tablet) {
-      margin-bottom: 61px;
+      margin-bottom: 32px;
     }
 
     @include on-tablet {
@@ -20,6 +21,7 @@
       grid-column: 1 / 6;
     }
   }
+
   &__fifth {
     grid-column: 1 / -1;
     margin-bottom: 24px;
@@ -32,6 +34,7 @@
       grid-column: 6 / -2;
     }
   }
+
   &__cloisters {
     grid-column: 1 / -1;
 
@@ -43,6 +46,7 @@
       grid-column: 6 / -5;
     }
   }
+
   &__title {
     text-align: left;
   }
@@ -59,22 +63,26 @@
     line-height: 1.25;
     margin-bottom: 16px;
   }
+
   &__time-wrap {
     display: flex;
     gap: 24px;
     margin-bottom: 16px;
   }
+
   &__item-time {
     &:not(:last-child) {
       margin-bottom: 8px;
     }
   }
+
   &__item-days {
     font-weight: 400;
     &:not(:last-child) {
       margin-bottom: 8px;
     }
   }
+
   &__text {
     font-weight: 400;
   }

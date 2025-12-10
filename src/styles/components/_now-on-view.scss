@@ -4,11 +4,7 @@
 .now-on-view {
   &__container {
     display: grid;
-    row-gap: 61px;
-
-    @include on-tablet {
-      row-gap: 48px;
-    }
+    row-gap: 48px;
   }
 
   &__title {

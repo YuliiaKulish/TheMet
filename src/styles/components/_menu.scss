@@ -1,0 +1,58 @@
+@use '../utils/vars' as *;
+@use '../utils/mixins' as *;
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: $accent-main;
+  padding-block: 25px;
+  overflow: auto;
+  transform: translateX(102%);
+  transition: transform $animation;
+
+  @include on-tablet {
+    padding-block: 50px;
+  }
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__logo {
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    margin-bottom: 8px;
+  }
+
+  &__list {
+    margin-bottom: 16px;
+  }
+
+  &__location,
+  &__phone {
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__call {
+    display: block;
+    width: fit-content;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: $white;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom $animation;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid $white;
+    }
+  }
+}

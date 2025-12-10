@@ -1,0 +1,69 @@
+@use '../utils/vars' as *;
+@use '../utils/mixins' as *;
+
+.burger-icon {
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  &__line {
+    width: 18px;
+    height: 2px;
+    border-radius: 1px;
+    display: block;
+    position: relative;
+    background-color: $white;
+    transition: background-color $animation;
+
+    @include on-tablet {
+      width: 24px;
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      width: 18px;
+      height: 2px;
+      border-radius: 1px;
+      position: absolute;
+      left: 0;
+      background-color: $white;
+      transition: transform $animation;
+
+      @include on-tablet {
+        width: 24px;
+      }
+    }
+
+    &::before {
+      transform: translateY(-5px);
+
+      @include on-tablet {
+        transform: translateY(-6px);
+      }
+    }
+
+    &::after {
+      transform: translateY(5px);
+
+      @include on-tablet {
+        transform: translateY(6px);
+      }
+    }
+  }
+
+  &.is-open {
+    & .burger-icon__line {
+      background-color: transparent;
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

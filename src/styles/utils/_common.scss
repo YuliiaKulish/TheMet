@@ -16,8 +16,8 @@ body {
 
 .main {
   display: grid;
-  row-gap: 61px;
-  padding-block: 61px;
+  row-gap: 100px;
+  padding-block: 100px;
 
   @include on-tablet {
     row-gap: 140px;
@@ -46,47 +46,5 @@ body {
   @include on-desktop {
     max-width: $desktop;
     padding-inline: 120px;
-  }
-}
-
-.section__title {
-  font-size: 32px;
-  line-height: 1;
-  letter-spacing: -0.05em;
-  text-align: center;
-
-  @include on-tablet {
-    font-size: 48px;
-    letter-spacing: -0.03em;
-  }
-}
-
-.button-wrap {
-  @include page-grid;
-}
-
-.button {
-  @include display-flex;
-
-  height: 56px;
-  font-family: $font-family;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.69;
-  background-color: $accent-main;
-  color: $white;
-  transition: background-color $animation;
-  &:hover {
-    background-color: $hover-btn;
-  }
-  &:active {
-    background-color: $active-btn;
-  }
-}
-
-picture {
-  transition: transform $animation;
-  &:hover {
-    transform: scale(1.2);
   }
 }

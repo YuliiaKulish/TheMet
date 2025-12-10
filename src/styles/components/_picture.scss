@@ -1,0 +1,9 @@
+@use '../utils/vars' as *;
+
+picture {
+  transition: transform $animation;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,17 @@
+@use '../utils/vars' as *;
+@use '../utils/mixins' as *;
+
+.logo {
+  max-width: 65px;
+  font-size: 30px;
+  letter-spacing: -0.04em;
+  color: $white;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 0.8;
+
+  @include on-tablet {
+    font-size: 40px;
+    max-width: 87px;
+  }
+}

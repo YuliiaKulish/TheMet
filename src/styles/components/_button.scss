@@ -1,0 +1,27 @@
+@use '../utils/vars' as *;
+@use '../utils/mixins' as *;
+
+.button-wrap {
+  @include page-grid;
+}
+
+.button {
+  @include display-flex;
+
+  height: 56px;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.69;
+  background-color: $accent-main;
+  color: $white;
+  transition: background-color $animation;
+
+  &:hover {
+    background-color: $hover-btn;
+  }
+
+  &:active {
+    background-color: $active-btn;
+  }
+}
